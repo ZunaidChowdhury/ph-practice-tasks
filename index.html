@@ -6,145 +6,221 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Travel Blog</title>
     <link rel="icon" type="image/x-icon" href="/images/home.png" />
+    <link rel="stylesheet" href="styles.css" />
     <meta name="description" content="Travel Blogs, Experience, Guides" />
     <meta
       name="keywords"
       content="Travel Guide, Cox's Bazar Travel Guide, Food to eat in Cox's Bazar"
     />
+    <style>
+      #blog-2-paragraph {
+        color: green;
+      }
+    </style>
   </head>
   <body>
+    <header
+      style="
+        position: relative;
+        background-image: url(/images/beach.jpg);
+        background-size: cover;
+        background-position-y: 30%;
+        height: 600px;
+      "
+    >
+      <div style="position: absolute; top: 30%; left: 7%">
+        <h3 style="font-size: 4rem">Explore More, Worry Less</h3>
+        <h2 style="font-size: 3rem">Uncover Hidden Gems</h2>
+      </div>
+    </header>
     <!-- Blogs  -->
-    <section>
-      <h1><em>My Travel Blogs</em></h1>
-      <div>
-        <h3>Blog 1</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo
-          molestiae voluptatem non voluptas consectetur repudiandae debitis
-          veritatis vel nesciunt magni voluptatibus id eos, illo enim,
-          voluptatum iure blanditiis dolores necessitatibus consequuntur vitae,
-          ratione fugiat explicabo quisquam totam. Accusamus, velit vel
-          aspernatur, ut sit vitae a dolores laboriosam, officia dolore id.
-        </p>
-        <button>Read More</button>
-      </div>
-      <div>
-        <h3>Blog 2</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo
-          molestiae voluptatem non voluptas consectetur repudiandae debitis
-          veritatis vel nesciunt magni voluptatibus id eos, illo enim,
-          voluptatum iure blanditiis dolores necessitatibus consequuntur vitae,
-          ratione fugiat explicabo quisquam totam. Accusamus, velit vel
-          aspernatur, ut sit vitae a dolores laboriosam, officia dolore id.
-        </p>
-        <button>Read More</button>
-      </div>
-      <div>
-        <h3>Blog 3</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo
-          molestiae voluptatem non voluptas consectetur repudiandae debitis
-          veritatis vel nesciunt magni voluptatibus id eos, illo enim,
-          voluptatum iure blanditiis dolores necessitatibus consequuntur vitae,
-          ratione fugiat explicabo quisquam totam. Accusamus, velit vel
-          aspernatur, ut sit vitae a dolores laboriosam, officia dolore id.
-        </p>
-        <button>Read More</button>
+    <section style="margin-top: 50px">
+      <h1 style="text-align: center"><em>My Travel Blogs</em></h1>
+      <div style="display: flex; gap: 20px" class="container">
+        <div class="blog-card">
+          <h3>Blog 1</h3>
+          <img
+            src="/images/beach.jpg"
+            alt="image of beach"
+            width="100%"
+            height="150px"
+            class="margin-top-10"
+          />
+          <p style="color: red" class="margin-top-10 clamp-paragraph">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo
+            molestiae voluptatem non voluptas consectetur repudiandae debitis
+            veritatis vel nesciunt magni voluptatibus id eos, illo enim,
+            voluptatum iure blanditiis dolores necessitatibus consequuntur
+            vitae, ratione fugiat explicabo quisquam totam. Accusamus, velit vel
+            aspernatur, ut sit vitae a dolores laboriosam, officia dolore id.
+          </p>
+          <button class="margin-top-10" style="padding: 5px 10px">
+            Read More
+          </button>
+        </div>
+
+        <div class="blog-card">
+          <h3>Blog 2</h3>
+          <img
+            src="/images/beach.jpg"
+            alt="image of beach"
+            width="100%"
+            height="150px"
+            class="margin-top-10"
+          />
+          <p id="blog-2-paragraph" class="margin-top-10 clamp-paragraph">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo
+            molestiae voluptatem non voluptas consectetur repudiandae debitis
+            veritatis vel nesciunt magni voluptatibus id eos, illo enim,
+            voluptatum iure blanditiis dolores necessitatibus consequuntur
+            vitae, ratione fugiat explicabo quisquam totam. Accusamus, velit vel
+            aspernatur, ut sit vitae a dolores laboriosam, officia dolore id.
+          </p>
+          <button class="margin-top-10" style="padding: 5px 10px">
+            Read More
+          </button>
+        </div>
+
+        <div class="blog-card">
+          <h3>Blog 3</h3>
+          <img
+            src="/images/beach.jpg"
+            alt="image of beach"
+            width="100%"
+            height="150px"
+            class="margin-top-10"
+          />
+          <p id="blog-3-paragraph" class="margin-top-10 clamp-paragraph">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo
+            molestiae voluptatem non voluptas consectetur repudiandae debitis
+            veritatis vel nesciunt magni voluptatibus id eos, illo enim,
+            voluptatum iure blanditiis dolores necessitatibus consequuntur
+            vitae, ratione fugiat explicabo quisquam totam. Accusamus, velit vel
+            aspernatur, ut sit vitae a dolores laboriosam, officia dolore id.
+          </p>
+          <button class="margin-top-10" style="padding: 5px 10px">
+            Read More
+          </button>
+        </div>
       </div>
     </section>
 
     <!-- List Section  -->
-    <section>
-      <br />
-      <span><strong>What I Bought:</strong></span>
-      <ol>
-        <li>Tuna</li>
-        <li>Shutki</li>
-        <li>Achars</li>
-      </ol>
-      <span><strong>My Favourite Foods:</strong></span>
-      <ul>
-        <li>Gorur gosto</li>
-        <li>Fisher gosto</li>
-        <li>Kakrar gosto</li>
-      </ul>
+    <section style="margin-top: 50px">
+      <h1 style="text-align: center">Lists</h1>
+      <div
+        class="container"
+        style="display: flex; gap: 100px; justify-content: center"
+      >
+        <div>
+          <h3>What I Bought:</h3>
+          <ol style="margin-left: 20px; margin-top: 20px">
+            <li>Tuna</li>
+            <li>Shutki</li>
+            <li>Achars</li>
+          </ol>
+        </div>
+        <div>
+          <h3>My Favourite Foods:</h3>
+          <ul style="margin-left: 20px; margin-top: 20px">
+            <li>Gorur gosto</li>
+            <li>Fisher gosto</li>
+            <li>Kakrar gosto</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <!-- Images section  -->
-    <section>
-      <h3>Foods i have tried:</h3>
-      <img
-        src="/images/fish-fry-1.jpg"
-        alt="image of fish fry"
-        width="500px"
-        height="250px"
-      />
-      <img
-        src="/images/fish-fry-2.jpg"
-        alt="image of fish fry"
-        width="500px"
-        height="250px"
-      />
+    <section style="margin-top: 50px">
+      <h1 style="text-align: center">Foods i have tried:</h1>
+      <div
+        class="container"
+        style="display: flex; gap: 20px; justify-content: center"
+      >
+        <img
+          src="/images/fish-fry-1.jpg"
+          alt="image of fish fry"
+          width="500px"
+          height="250px"
+        />
+        <img
+          src="/images/fish-fry-2.jpg"
+          alt="image of fish fry"
+          width="500px"
+          height="250px"
+        />
+      </div>
     </section>
 
     <!-- Music Section  -->
-    <section>
-      <br />
-      <span><b>Music I Listened while Traveling:</b></span>
-      <a
-        href="https://www.youtube.com/watch?v=PllZbYCTZ_Y&pp=ygUZQ1ZSVE9PTiAtIFZBVEFOIFNBxJ5PTFNVTg%3D%3D"
-        target="_blank"
-        >CVRTOON - VATAN SAĞOLSUN</a
-      >
+    <section style="margin-top: 50px">
+      <div class="container" style="text-align: center">
+        <span><b>Music I Listened while Traveling:</b></span>
+        <a
+          href="https://www.youtube.com/watch?v=PllZbYCTZ_Y&pp=ygUZQ1ZSVE9PTiAtIFZBVEFOIFNBxJ5PTFNVTg%3D%3D"
+          target="_blank"
+          >CVRTOON - VATAN SAĞOLSUN</a
+        >
+      </div>
     </section>
 
     <!-- contact form  -->
-    <section>
-      <h3>Contact me</h3>
-      <form action="">
-        <label for="name">Name:</label><br />
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="John"
-        /><br /><br />
+    <section style="margin-top: 50px">
+      <h1 style="text-align: center">Contact me</h1>
+      <div class="container" style="display: flex; justify-content: center">
+        <form
+          action=""
+          style="background-color: white; padding: 20px; border-radius: 20px"
+        >
+          <label for="name">Name:</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="John"
+          /><br /><br />
 
-        <label for="cars">Traveling to:</label>
-        <select name="cars" id="cars">
-          <option value="volvo">Dhaka</option>
-          <option value="saab">Sylhet</option>
-          <option value="mercedes">Cox's bazar</option>
-        </select>
-        <br /><br />
+          <label for="cars">Traveling to:</label>
+          <select name="cars" id="cars">
+            <option value="volvo">Dhaka</option>
+            <option value="saab">Sylhet</option>
+            <option value="mercedes">Cox's bazar</option>
+          </select>
+          <br /><br />
 
-        <label for="email">Email:</label><br />
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="someone@gmail.com"
-        /><br /><br />
+          <label for="email">Email:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="someone@gmail.com"
+          /><br /><br />
 
-        <label for="message">Message:</label><br />
-        <textarea
-          id="message"
-          name="message"
-          rows="4"
-          cols="50"
-          placeholder="Type here..."
-        ></textarea
-        ><br /><br />
-        <input type="submit" value="Submit" />
-      </form>
+          <label for="message">Message:</label><br />
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            cols="50"
+            placeholder="Type here..."
+          ></textarea
+          ><br /><br />
+          <input type="submit" value="Submit" style="padding: 5px 20px" />
+        </form>
+      </div>
     </section>
 
-
-
     <!-- Footer  -->
-    <section>
-      <br />
+    <section
+      style="
+        background-color: black;
+        color: antiquewhite;
+        padding: 10px;
+        text-align: center;
+        margin-top: 50px;
+      "
+    >
       <footer>
         <small>&copy; 2026 My Travel Blog. All rights reserved.</small>
       </footer>
