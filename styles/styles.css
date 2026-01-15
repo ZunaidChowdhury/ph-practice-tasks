@@ -2,7 +2,7 @@
   color: blue;
 } */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,16 +21,17 @@ nav li a {
     text-decoration: none;
 }
 
-.container{
-    max-width: 1280px; 
-    margin: 0px auto; 
+.container {
+    max-width: 1280px;
+    margin: 0px auto;
     padding: 20px;
 }
 
 .clamp-paragraph {
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-line-clamp: 3;
+    /* Limit to 3 lines */
     overflow: hidden;
 }
 
@@ -43,7 +44,7 @@ nav li a {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
-        transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .margin-top-10 {
@@ -56,3 +57,58 @@ nav li a {
     transform: translateY(-5px);
 
 }
+
+
+/* CSS BOUNCE ANIMATION  */
+.stage {
+    background-color: aquamarine;
+    width: 1200px;
+    height: 300px;
+    margin: 100px auto 0px;
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    border-radius: 50%;
+
+    position: relative;
+    /**/
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* alternate - The animation is played forwards first, then backwards */
+    /* fill-mode - keeps/retains animated state. 
+    animation-fill-mode: forwards;  // keeps last keyframe state */
+    /* animation: ball-bounce 2s ease-in-out .5s infinite alternate;                           */
+    /**/
+    animation: ball-bounce-2 2s ease-in-out 0s infinite alternate;
+    /**/
+}
+
+@keyframes ball-bounce-2 {
+
+    /**/
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+
+    25% {
+        top: 200px;
+        left: 150px;
+        background-color: red;
+    }
+
+    50% {
+        top: 0px;
+        left: 300px;
+    }
+
+    100% {
+        top: 200px;
+        left: 450px;
+    }
+}
+
+/**/
+
