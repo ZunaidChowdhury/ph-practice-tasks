@@ -1,114 +1,79 @@
-/* body > section:nth-child(1) > div:nth-child(4) > p {
-  color: blue;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root{
+    --primary-color: #2C20DF;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f0f1f5;
+    font-family: "Roboto", sans-serif;
+    background-color: #ffffff;
 }
 
-nav li {
-    list-style: none;
-}
-
-nav li a {
-    text-decoration: none;
-}
-
-.container {
-    max-width: 1280px;
-    margin: 0px auto;
-    padding: 20px;
-}
-
-.clamp-paragraph {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    /* Limit to 3 lines */
-    overflow: hidden;
-}
-
-#blog-3-paragraph {
-    color: blue;
-}
-
-.blog-card {
-
+.nav-wrapper {
+    width: 100%;
+    height: 92px;
     background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    transition: all 0.3s ease-in-out;
+    padding: 8px 0px;
+    box-shadow: 0px 2px 6px #888888;
 }
 
-.margin-top-10 {
-    margin-top: 10px;
-}
-
-.blog-card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transform: translateY(-5px);
-
-}
-
-
-/* CSS BOUNCE ANIMATION  */
-.stage {
-    background-color: aquamarine;
-    width: 1200px;
-    height: 300px;
-    margin: 100px auto 0px;
-}
-
-.ball {
-    width: 50px;
+.nav-container {
+    max-width: 1320px;
     height: 50px;
-    background-color: blueviolet;
-    border-radius: 50%;
+    margin: 0px auto;
 
-    position: relative;
-    /**/
-    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-    /* alternate - The animation is played forwards first, then backwards */
-    /* fill-mode - keeps/retains animated state. 
-    animation-fill-mode: forwards;  // keeps last keyframe state */
-    /* animation: ball-bounce 2s ease-in-out .5s infinite alternate;                           */
-    /**/
-    animation: ball-bounce-2 2s ease-in-out 0s infinite alternate;
-    /**/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
-@keyframes ball-bounce-2 {
-
-    /**/
-    0% {
-        top: 0px;
-        left: 0px;
-    }
-
-    25% {
-        top: 200px;
-        left: 150px;
-        background-color: red;
-    }
-
-    50% {
-        top: 0px;
-        left: 300px;
-    }
-
-    100% {
-        top: 200px;
-        left: 450px;
-    }
+.nav-brand-logo {
+    width: 230px;
+    height: 36px;
 }
 
-/**/
+.nav-menu-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
+.nav-link {
+    /* padding: 8px 19.2px; */
+}
+
+.nav-menu-container a {
+    color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+
+    transition: color .3s;
+}
+
+.nav-menu-container a:hover {
+    color: var(--primary-color);
+}
+
+.nav-menu-container span {
+    
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav-menu-container i {
+    margin-top: -8px;
+}
+
+.nav-buttons {
+    display: flex;
+}

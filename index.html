@@ -1,229 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Head section  -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Travel Blog</title>
-    <link rel="icon" type="image/x-icon" href="/images/home.png" />
-    <link rel="stylesheet" href="/styles/styles.css" />
-    <meta name="description" content="Travel Blogs, Experience, Guides" />
-    <meta
-      name="keywords"
-      content="Travel Guide, Cox's Bazar Travel Guide, Food to eat in Cox's Bazar"
-    />
-    <style>
-      #blog-2-paragraph {
-        color: green;
-      }
-    </style>
+    <title>Standard Site</title>
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- FONT AWESOME -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <header
-      style="
-        position: relative;
-        background-image: url(/images/beach.jpg);
-        background-size: cover;
-        background-position-y: 30%;
-        height: 600px;
-      "
-    >
-      <div style="position: absolute; top: 30%; left: 7%">
-        <h3 style="font-size: 4rem">Explore More, Worry Less</h3>
-        <h2 style="font-size: 3rem">Uncover Hidden Gems</h2>
-      </div>
-    </header>
-    <!-- Blogs  -->
-    <section style="margin-top: 50px">
-      <h1 style="text-align: center"><em>My Travel Blogs</em></h1>
-      <div style="display: flex; gap: 20px" class="container">
-        <div class="blog-card">
-          <h3>Blog 1</h3>
-          <img
-            src="/images/beach.jpg"
-            alt="image of beach"
-            width="100%"
-            height="150px"
-            class="margin-top-10"
-          />
-          <p style="color: red" class="margin-top-10 clamp-paragraph">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo
-            molestiae voluptatem non voluptas consectetur repudiandae debitis
-            veritatis vel nesciunt magni voluptatibus id eos, illo enim,
-            voluptatum iure blanditiis dolores necessitatibus consequuntur
-            vitae, ratione fugiat explicabo quisquam totam. Accusamus, velit vel
-            aspernatur, ut sit vitae a dolores laboriosam, officia dolore id.
-          </p>
-          <button class="margin-top-10" style="padding: 5px 10px">
-            Read More
-          </button>
-        </div>
+    <!-- HEADER  -->
+    <header>
+      <!-- navbar wrapper -->
+      <nav class="nav-wrapper">
+        <!-- nav container  -->
+        <div class="nav-container">
+          <!-- site logo -->
+          <a href="" class="nav-brand-logo">
+            <img src="https://www.clickbank.com/assets/images/clickbank.webp" alt="brand logo" />
+          </a>
 
-        <div class="blog-card">
-          <h3>Blog 2</h3>
-          <img
-            src="/images/beach.jpg"
-            alt="image of beach"
-            width="100%"
-            height="150px"
-            class="margin-top-10"
-          />
-          <p id="blog-2-paragraph" class="margin-top-10 clamp-paragraph">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo
-            molestiae voluptatem non voluptas consectetur repudiandae debitis
-            veritatis vel nesciunt magni voluptatibus id eos, illo enim,
-            voluptatum iure blanditiis dolores necessitatibus consequuntur
-            vitae, ratione fugiat explicabo quisquam totam. Accusamus, velit vel
-            aspernatur, ut sit vitae a dolores laboriosam, officia dolore id.
-          </p>
-          <button class="margin-top-10" style="padding: 5px 10px">
-            Read More
-          </button>
-        </div>
+          <!-- nav toggle button for responsive -->
+          <!-- <button><span class="navbar"></span></button> -->
 
-        <div class="blog-card">
-          <h3>Blog 3</h3>
-          <img
-            src="/images/beach.jpg"
-            alt="image of beach"
-            width="100%"
-            height="150px"
-            class="margin-top-10"
-          />
-          <p id="blog-3-paragraph" class="margin-top-10 clamp-paragraph">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo
-            molestiae voluptatem non voluptas consectetur repudiandae debitis
-            veritatis vel nesciunt magni voluptatibus id eos, illo enim,
-            voluptatum iure blanditiis dolores necessitatibus consequuntur
-            vitae, ratione fugiat explicabo quisquam totam. Accusamus, velit vel
-            aspernatur, ut sit vitae a dolores laboriosam, officia dolore id.
-          </p>
-          <button class="margin-top-10" style="padding: 5px 10px">
-            Read More
-          </button>
-        </div>
-      </div>
-    </section>
+          <!-- nav menus / primary nav  -->
+          <div>
+            <ul class="nav-menu-container">
+              <!-- Home -->
+              <li>
+                <a href="" class="nav-link"><span>Home</span></a>
+              </li>
+              <!-- Affiliates dropdown item - opens on click not hover -->
+              <li>
+                <a href="" class="nav-link">
+                  <span>Affiliates</span>
+                  <!-- down arrow icon -->
+                  <!-- <img src="" alt="" /> -->
+                   <i class="fa-solid fa-sort-down" ></i>
+                </a>
+              </li>
+              <!-- Sellers dropdown item - opens on click not hover -->
+              <li>
+                <a href="" class="nav-link">
+                  <span>Sellers</span>
+                  <!-- down arrow icon -->
+                  <!-- <img src="" alt="" /> -->
+                   <i class="fa-solid fa-sort-down"></i>
+                </a>
+              </li>
+              <!-- Learn dropdown item - opens on click not hover -->
+              <li>
+                <a href="" class="nav-link">
+                  <span>Learn</span>
+                  <!-- down arrow icon -->
+                  <!-- <img src="" alt="" /> -->
+                   <i class="fa-solid fa-sort-down"></i>
+                </a>
+              </li>
+              <!-- Support -->
+              <li>
+                <a href="" class="nav-link"><span>Support</span></a>
+              </li>
+            </ul>
+          </div>
 
-    <!-- List Section  -->
-    <section style="margin-top: 50px">
-      <h1 style="text-align: center">Lists</h1>
-      <div
-        class="container"
-        style="display: flex; gap: 100px; justify-content: center"
-      >
-        <div>
-          <h3>What I Bought:</h3>
-          <ol style="margin-left: 20px; margin-top: 20px">
-            <li>Tuna</li>
-            <li>Shutki</li>
-            <li>Achars</li>
-          </ol>
-        </div>
-        <div>
-          <h3>My Favourite Foods:</h3>
-          <ul style="margin-left: 20px; margin-top: 20px">
-            <li>Gorur gosto</li>
-            <li>Fisher gosto</li>
-            <li>Kakrar gosto</li>
+          <!-- navbar buttons -->
+          <ul class="nav-buttons">
+            <li><a href="">Log In</a></li>
+            <li>
+              <a href="">
+                <span>Find My Order</span>
+                <!-- a search icon -->
+                <img src="" alt="" />
+              </a>
+            </li>
+            <li>
+              <button>Start Here</button>
+            </li>
           </ul>
         </div>
-      </div>
-    </section>
-
-    <!-- Images section  -->
-    <section style="margin-top: 50px">
-      <h1 style="text-align: center">Foods i have tried:</h1>
-      <div
-        class="container"
-        style="display: flex; gap: 20px; justify-content: center"
-      >
-        <img
-          src="/images/fish-fry-1.jpg"
-          alt="image of fish fry"
-          width="500px"
-          height="250px"
-        />
-        <img
-          src="/images/fish-fry-2.jpg"
-          alt="image of fish fry"
-          width="500px"
-          height="250px"
-        />
-      </div>
-    </section>
-
-    <!-- Music Section  -->
-    <section style="margin-top: 50px">
-      <div class="container" style="text-align: center">
-        <span><b>Music I Listened while Traveling:</b></span>
-        <a
-          href="https://www.youtube.com/watch?v=PllZbYCTZ_Y&pp=ygUZQ1ZSVE9PTiAtIFZBVEFOIFNBxJ5PTFNVTg%3D%3D"
-          target="_blank"
-          >CVRTOON - VATAN SAĞOLSUN</a
-        >
-      </div>
-    </section>
-
-    <!-- contact form  -->
-    <section style="margin-top: 50px">
-      <h1 style="text-align: center">Contact me</h1>
-      <div class="container" style="display: flex; justify-content: center">
-        <form
-          action=""
-          style="background-color: white; padding: 20px; border-radius: 20px"
-        >
-          <label for="name">Name:</label><br />
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="John"
-          /><br /><br />
-
-          <label for="cars">Traveling to:</label>
-          <select name="cars" id="cars">
-            <option value="volvo">Dhaka</option>
-            <option value="saab">Sylhet</option>
-            <option value="mercedes">Cox's bazar</option>
-          </select>
-          <br /><br />
-
-          <label for="email">Email:</label><br />
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="someone@gmail.com"
-          /><br /><br />
-
-          <label for="message">Message:</label><br />
-          <textarea
-            id="message"
-            name="message"
-            rows="4"
-            cols="50"
-            placeholder="Type here..."
-          ></textarea
-          ><br /><br />
-          <input type="submit" value="Submit" style="padding: 5px 20px" />
-        </form>
-      </div>
-    </section>
-
-    <!-- Footer  -->
-    <section
-      style="
-        background-color: black;
-        color: antiquewhite;
-        padding: 10px;
-        text-align: center;
-        margin-top: 50px;
-      "
-    >
-      <footer>
-        <small>&copy; 2026 My Travel Blog. All rights reserved.</small>
-      </footer>
-    </section>
+      </nav>
+    </header>
+    <!-- MAIN  -->
+    <main></main>
+    <!-- FOOTER  -->
   </body>
 </html>
